@@ -34,7 +34,10 @@ chroma_db/
 vectorstore/
 
 # ONNX model files
-onnx_model/
+onnx_model/*
+!onnx_model/*.onnx
+!onnx_model/*.json
+!onnx_model/vocab.txt
 
 # Local testing and backup files
 backend/*backup.py
