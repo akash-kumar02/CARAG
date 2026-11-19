@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1020">
+  <title>CARAG | Corrective & Adaptive Agentic RAG</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/dompurify@3/dist/purify.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <div class="brand"><div class="brand-icon">C</div><div><h1>CARAG</h1><p>Corrective & Adaptive Agentic RAG</p></div></div>
+    <div class="status"><span class="status-dot"></span><span id="statusText">Demo Mode</span></div>
+  </header>
+  <main class="chat-container" id="chatContainer" aria-label="Chat conversation">
+    <div class="chat-inner" id="chatMessages">
+      <section class="welcome" id="welcome">
+        <div class="welcome-icon">✦</div>
+        <h2>Welcome to <span>CARAG</span></h2>
+        <p>Your intelligent research assistant powered by Corrective and Adaptive Agentic Retrieval-Augmented Generation. Ask questions and explore grounded answers.</p>
+      </section>
+    </div>
+  </main>
+  <footer class="input-area">
+    <form class="input-wrapper" id="chatForm">
+      <textarea id="queryInput" placeholder="Ask your query here..." rows="1" aria-label="Your question" required></textarea>
+      <button class="send-btn" type="submit" id="sendBtn">Send ➤</button>
+    </form>
+    <p class="footer-note">CARAG • Corrective & Adaptive Agentic RAG</p>
+  </footer>
+</body>
+</html>
