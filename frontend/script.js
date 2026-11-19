@@ -7,7 +7,7 @@ const welcome = document.getElementById('welcome');
 
 // Set false after connecting your Python FastAPI/Flask backend.
 const DEMO_MODE = false;
-const API_URL = 'http://localhost:8000/chat';
+const API_URL = 'https://carag.onrender.com/chat';
 let isLoading = false;
 
 document.getElementById('statusText').textContent = DEMO_MODE ? 'Demo Mode' : 'Backend Configured';
