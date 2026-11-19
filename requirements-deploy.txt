@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+groq
+qdrant-client
+python-dotenv
+numpy
+onnxruntime
+transformers==4.57.6
+huggingface-hub==0.36.2

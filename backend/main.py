@@ -83,11 +83,6 @@ async def chat(request: ChatRequest):
             "sources": result["sources"]
         }
 
-    except RateLimitError:
-        raise HTTPException(
-            status_code=429,
-            detail="Rate limit exceeded"
-        )
     except RateLimitError as e:
         print("Groq rate limit exceeded:", repr(e))
 

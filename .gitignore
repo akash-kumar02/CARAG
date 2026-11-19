@@ -23,3 +23,21 @@ __pycache__/
 
 /data/
 /notebook/
+
+# CARAG deployment
+.venv/
+venv/
+*.pyc
+
+# Local vector databases
+chroma_db/
+vectorstore/
+
+# ONNX model files
+onnx_model/
+
+# Local testing and backup files
+backend/*backup.py
+backend/*copy*.py
+text_onnx.py
+migrate_to_qdrant.py
